@@ -1,0 +1,889 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'onoff' ]
+2 info using npm@2.15.8
+3 info using node@v4.4.7
+4 verbose install initial load of D:\Elangovan\projects\hackanthon\Jarvis\package.json
+5 warn package.json s@1.0.0 No description
+6 warn package.json s@1.0.0 No repository field.
+7 warn package.json s@1.0.0 No README data
+8 verbose installManyTop reading scoped package data from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\apiai\package.json
+9 verbose installManyTop reading scoped package data from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\express\package.json
+10 verbose installManyTop reading scoped package data from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\node-gyp\package.json
+11 verbose installManyTop reading scoped package data from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\rebuild\package.json
+12 verbose installManyTop reading scoped package data from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\socket.io\package.json
+13 info package.json rebuild@0.1.2 No license field.
+14 info package.json apiai@2.0.5 license should be a valid SPDX license expression
+15 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\package.json
+16 silly cache add args [ 'onoff', null ]
+17 verbose cache add spec onoff
+18 silly cache add parsed spec Result {
+18 silly cache add   raw: 'onoff',
+18 silly cache add   scope: null,
+18 silly cache add   name: 'onoff',
+18 silly cache add   rawSpec: '',
+18 silly cache add   spec: 'latest',
+18 silly cache add   type: 'tag' }
+19 silly addNamed onoff@latest
+20 verbose addNamed "latest" is being treated as a dist-tag for onoff
+21 info addNameTag [ 'onoff', 'latest' ]
+22 silly mapToRegistry name onoff
+23 silly mapToRegistry using default registry
+24 silly mapToRegistry registry https://registry.npmjs.org/
+25 silly mapToRegistry data Result {
+25 silly mapToRegistry   raw: 'onoff',
+25 silly mapToRegistry   scope: null,
+25 silly mapToRegistry   name: 'onoff',
+25 silly mapToRegistry   rawSpec: '',
+25 silly mapToRegistry   spec: 'latest',
+25 silly mapToRegistry   type: 'tag' }
+26 silly mapToRegistry uri https://registry.npmjs.org/onoff
+27 verbose addNameTag registry:https://registry.npmjs.org/onoff not in flight; fetching
+28 verbose request uri https://registry.npmjs.org/onoff
+29 verbose request no auth needed
+30 info attempt registry request try #1 at 1:39:42 AM
+31 verbose request id 4ac3a8f779d3f0fd
+32 verbose etag "26EHAZKXOHG44K677K9E7D1Z4"
+33 http request GET https://registry.npmjs.org/onoff
+34 http 304 https://registry.npmjs.org/onoff
+35 verbose headers { date: 'Thu, 28 Jul 2016 20:08:20 GMT',
+35 verbose headers   via: '1.1 varnish',
+35 verbose headers   'cache-control': 'max-age=300',
+35 verbose headers   etag: '"26EHAZKXOHG44K677K9E7D1Z4"',
+35 verbose headers   age: '103',
+35 verbose headers   connection: 'keep-alive',
+35 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+35 verbose headers   'x-cache': 'HIT',
+35 verbose headers   'x-cache-hits': '2',
+35 verbose headers   'x-timer': 'S1469736500.799711,VS0,VE0',
+35 verbose headers   vary: 'Accept-Encoding' }
+36 silly get cb [ 304,
+36 silly get   { date: 'Thu, 28 Jul 2016 20:08:20 GMT',
+36 silly get     via: '1.1 varnish',
+36 silly get     'cache-control': 'max-age=300',
+36 silly get     etag: '"26EHAZKXOHG44K677K9E7D1Z4"',
+36 silly get     age: '103',
+36 silly get     connection: 'keep-alive',
+36 silly get     'x-served-by': 'cache-sin6927-SIN',
+36 silly get     'x-cache': 'HIT',
+36 silly get     'x-cache-hits': '2',
+36 silly get     'x-timer': 'S1469736500.799711,VS0,VE0',
+36 silly get     vary: 'Accept-Encoding' } ]
+37 verbose etag https://registry.npmjs.org/onoff from cache
+38 verbose get saving onoff to C:\Users\166486\AppData\Roaming\npm-cache\registry.npmjs.org\onoff\.cache.json
+39 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+40 silly addNameTag next cb for onoff with tag latest
+41 silly addNamed onoff@1.1.1
+42 verbose addNamed "1.1.1" is a plain semver version for onoff
+43 silly cache afterAdd onoff@1.1.1
+44 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\onoff\1.1.1\package\package.json not in flight; writing
+45 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+46 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\onoff\1.1.1\package\package.json written
+47 silly install resolved [ { name: 'onoff',
+47 silly install resolved     version: '1.1.1',
+47 silly install resolved     description: 'GPIO access and interrupt detection with JavaScript',
+47 silly install resolved     main: 'onoff.js',
+47 silly install resolved     directories: { example: 'examples', test: 'test' },
+47 silly install resolved     scripts: { test: 'echo "Tests can only be run manually from the command line. They access hardware GPIOs." && exit 1' },
+47 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/fivdi/onoff.git' },
+47 silly install resolved     engines: { node: '>=0.8.0' },
+47 silly install resolved     dependencies: { epoll: '~0.1.19' },
+47 silly install resolved     keywords:
+47 silly install resolved      [ 'gpio',
+47 silly install resolved        'embedded',
+47 silly install resolved        'interrupt',
+47 silly install resolved        'beaglebone',
+47 silly install resolved        'bbb',
+47 silly install resolved        'bb',
+47 silly install resolved        'raspberry',
+47 silly install resolved        'raspi',
+47 silly install resolved        'rpi',
+47 silly install resolved        'pi',
+47 silly install resolved        'linux' ],
+47 silly install resolved     author: { name: 'fivdi' },
+47 silly install resolved     license: 'MIT',
+47 silly install resolved     gitHead: 'd653309e3ccbc9e6e7a190ded8418aa6e3a7f620',
+47 silly install resolved     bugs: { url: 'https://github.com/fivdi/onoff/issues' },
+47 silly install resolved     homepage: 'https://github.com/fivdi/onoff#readme',
+47 silly install resolved     _id: 'onoff@1.1.1',
+47 silly install resolved     _shasum: '3ed88a8d4c9cc3a58c3e4766d7e9d1bcffb0df3b',
+47 silly install resolved     _from: 'onoff@latest',
+47 silly install resolved     _npmVersion: '2.15.0',
+47 silly install resolved     _nodeVersion: '0.10.44',
+47 silly install resolved     _npmUser: { name: 'fivdi', email: 'fivdiweb@gmail.com' },
+47 silly install resolved     maintainers: [ [Object] ],
+47 silly install resolved     dist:
+47 silly install resolved      { shasum: '3ed88a8d4c9cc3a58c3e4766d7e9d1bcffb0df3b',
+47 silly install resolved        tarball: 'https://registry.npmjs.org/onoff/-/onoff-1.1.1.tgz' },
+47 silly install resolved     _npmOperationalInternal:
+47 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+47 silly install resolved        tmp: 'tmp/onoff-1.1.1.tgz_1465140688539_0.6314098725561053' },
+47 silly install resolved     _resolved: 'https://registry.npmjs.org/onoff/-/onoff-1.1.1.tgz',
+47 silly install resolved     readme: 'ERROR: No README data found!' } ]
+48 info install onoff@1.1.1 into D:\Elangovan\projects\hackanthon\Jarvis
+49 info installOne onoff@1.1.1
+50 verbose installOne of onoff to D:\Elangovan\projects\hackanthon\Jarvis not in flight; installing
+51 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+52 verbose lock using C:\Users\166486\AppData\Roaming\npm-cache\_locks\onoff-55f0b6666ca7d83f.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+53 silly install write writing onoff 1.1.1 to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+54 verbose unbuild node_modules\onoff
+55 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+56 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+57 verbose tar unpack C:\Users\166486\AppData\Roaming\npm-cache\onoff\1.1.1\package.tgz
+58 verbose tar unpacking to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+59 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff is being purged
+60 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+61 silly gunzTarPerm modes [ '777', '666' ]
+62 silly gunzTarPerm extractEntry package.json
+63 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+64 silly gunzTarPerm extractEntry .npmignore
+65 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+66 silly gunzTarPerm extractEntry README.md
+67 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+68 silly gunzTarPerm extractEntry LICENSE
+69 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+70 silly gunzTarPerm extractEntry onoff.js
+71 silly gunzTarPerm modified mode [ 'onoff.js', 436, 438 ]
+72 silly gunzTarPerm extractEntry History.md
+73 silly gunzTarPerm modified mode [ 'History.md', 436, 438 ]
+74 silly gunzTarPerm extractEntry examples/blink-led-async.js
+75 silly gunzTarPerm modified mode [ 'examples/blink-led-async.js', 436, 438 ]
+76 silly gunzTarPerm extractEntry examples/blink-led.js
+77 silly gunzTarPerm modified mode [ 'examples/blink-led.js', 436, 438 ]
+78 silly gunzTarPerm extractEntry examples/light-switch.js
+79 silly gunzTarPerm modified mode [ 'examples/light-switch.js', 436, 438 ]
+80 silly gunzTarPerm extractEntry examples/wait-for-interrupt.js
+81 silly gunzTarPerm modified mode [ 'examples/wait-for-interrupt.js', 436, 438 ]
+82 silly gunzTarPerm extractEntry examples/light-switch.png
+83 silly gunzTarPerm modified mode [ 'examples/light-switch.png', 436, 438 ]
+84 silly gunzTarPerm extractEntry examples/mygpio-overlay.dts
+85 silly gunzTarPerm modified mode [ 'examples/mygpio-overlay.dts', 436, 438 ]
+86 silly gunzTarPerm extractEntry examples/run-examples
+87 silly gunzTarPerm modified mode [ 'examples/run-examples', 509, 511 ]
+88 silly gunzTarPerm extractEntry test/blink-led.js
+89 silly gunzTarPerm modified mode [ 'test/blink-led.js', 436, 438 ]
+90 silly gunzTarPerm extractEntry test/configure-and-check-input.js
+91 silly gunzTarPerm modified mode [ 'test/configure-and-check-input.js', 436, 438 ]
+92 silly gunzTarPerm extractEntry test/configure-and-check-output.js
+93 silly gunzTarPerm modified mode [ 'test/configure-and-check-output.js', 436, 438 ]
+94 silly gunzTarPerm extractEntry test/export-many-times.js
+95 silly gunzTarPerm modified mode [ 'test/export-many-times.js', 436, 438 ]
+96 silly gunzTarPerm extractEntry test/many-interrupts.js
+97 silly gunzTarPerm modified mode [ 'test/many-interrupts.js', 436, 438 ]
+98 silly gunzTarPerm extractEntry test/configure-and-check-active-low.js
+99 silly gunzTarPerm modified mode [ 'test/configure-and-check-active-low.js', 436, 438 ]
+100 silly gunzTarPerm extractEntry test/performance-interrupt.js
+101 silly gunzTarPerm modified mode [ 'test/performance-interrupt.js', 436, 438 ]
+102 silly gunzTarPerm extractEntry test/performance-sync.js
+103 silly gunzTarPerm modified mode [ 'test/performance-sync.js', 436, 438 ]
+104 silly gunzTarPerm extractEntry test/wait-for-interrupt.js
+105 silly gunzTarPerm modified mode [ 'test/wait-for-interrupt.js', 436, 438 ]
+106 silly gunzTarPerm extractEntry test/wait-for-many-interrupts.js
+107 silly gunzTarPerm modified mode [ 'test/wait-for-many-interrupts.js', 436, 438 ]
+108 silly gunzTarPerm extractEntry test/performance-async.js
+109 silly gunzTarPerm modified mode [ 'test/performance-async.js', 436, 438 ]
+110 silly gunzTarPerm extractEntry test/run-tests
+111 silly gunzTarPerm modified mode [ 'test/run-tests', 509, 511 ]
+112 verbose write writing to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\package.json
+113 info preinstall onoff@1.1.1
+114 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\package.json
+115 silly prepareForInstallMany adding epoll@~0.1.19 from onoff dependencies
+116 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\package.json
+117 silly cache add args [ 'epoll@~0.1.19', null ]
+118 verbose cache add spec epoll@~0.1.19
+119 silly cache add parsed spec Result {
+119 silly cache add   raw: 'epoll@~0.1.19',
+119 silly cache add   scope: null,
+119 silly cache add   name: 'epoll',
+119 silly cache add   rawSpec: '~0.1.19',
+119 silly cache add   spec: '>=0.1.19 <0.2.0',
+119 silly cache add   type: 'range' }
+120 silly addNamed epoll@>=0.1.19 <0.2.0
+121 verbose addNamed ">=0.1.19 <0.2.0" is a valid semver range for epoll
+122 silly addNameRange { name: 'epoll', range: '>=0.1.19 <0.2.0', hasData: false }
+123 silly mapToRegistry name epoll
+124 silly mapToRegistry using default registry
+125 silly mapToRegistry registry https://registry.npmjs.org/
+126 silly mapToRegistry data Result {
+126 silly mapToRegistry   raw: 'epoll',
+126 silly mapToRegistry   scope: null,
+126 silly mapToRegistry   name: 'epoll',
+126 silly mapToRegistry   rawSpec: '',
+126 silly mapToRegistry   spec: 'latest',
+126 silly mapToRegistry   type: 'tag' }
+127 silly mapToRegistry uri https://registry.npmjs.org/epoll
+128 verbose addNameRange registry:https://registry.npmjs.org/epoll not in flight; fetching
+129 verbose request uri https://registry.npmjs.org/epoll
+130 verbose request no auth needed
+131 info attempt registry request try #1 at 1:39:43 AM
+132 verbose etag "SC8SO2E3HUE89E4YOI0PYCED"
+133 http request GET https://registry.npmjs.org/epoll
+134 http 304 https://registry.npmjs.org/epoll
+135 verbose headers { date: 'Thu, 28 Jul 2016 20:08:21 GMT',
+135 verbose headers   via: '1.1 varnish',
+135 verbose headers   'cache-control': 'max-age=300',
+135 verbose headers   etag: '"SC8SO2E3HUE89E4YOI0PYCED"',
+135 verbose headers   age: '103',
+135 verbose headers   connection: 'keep-alive',
+135 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+135 verbose headers   'x-cache': 'HIT',
+135 verbose headers   'x-cache-hits': '2',
+135 verbose headers   'x-timer': 'S1469736501.287943,VS0,VE0',
+135 verbose headers   vary: 'Accept-Encoding' }
+136 silly get cb [ 304,
+136 silly get   { date: 'Thu, 28 Jul 2016 20:08:21 GMT',
+136 silly get     via: '1.1 varnish',
+136 silly get     'cache-control': 'max-age=300',
+136 silly get     etag: '"SC8SO2E3HUE89E4YOI0PYCED"',
+136 silly get     age: '103',
+136 silly get     connection: 'keep-alive',
+136 silly get     'x-served-by': 'cache-sin6927-SIN',
+136 silly get     'x-cache': 'HIT',
+136 silly get     'x-cache-hits': '2',
+136 silly get     'x-timer': 'S1469736501.287943,VS0,VE0',
+136 silly get     vary: 'Accept-Encoding' } ]
+137 verbose etag https://registry.npmjs.org/epoll from cache
+138 verbose get saving epoll to C:\Users\166486\AppData\Roaming\npm-cache\registry.npmjs.org\epoll\.cache.json
+139 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+140 silly addNameRange number 2 { name: 'epoll', range: '>=0.1.19 <0.2.0', hasData: true }
+141 silly addNameRange versions [ 'epoll',
+141 silly addNameRange   [ '0.0.1',
+141 silly addNameRange     '0.0.2',
+141 silly addNameRange     '0.0.3',
+141 silly addNameRange     '0.0.4',
+141 silly addNameRange     '0.0.5',
+141 silly addNameRange     '0.0.6',
+141 silly addNameRange     '0.0.7',
+141 silly addNameRange     '0.0.8',
+141 silly addNameRange     '0.1.0',
+141 silly addNameRange     '0.1.1',
+141 silly addNameRange     '0.1.2',
+141 silly addNameRange     '0.1.3',
+141 silly addNameRange     '0.1.4',
+141 silly addNameRange     '0.1.5',
+141 silly addNameRange     '0.1.7',
+141 silly addNameRange     '0.1.8',
+141 silly addNameRange     '0.1.9',
+141 silly addNameRange     '0.1.10',
+141 silly addNameRange     '0.1.11',
+141 silly addNameRange     '0.1.12',
+141 silly addNameRange     '0.1.13',
+141 silly addNameRange     '0.1.14',
+141 silly addNameRange     '0.1.15',
+141 silly addNameRange     '0.1.16',
+141 silly addNameRange     '0.1.17',
+141 silly addNameRange     '0.1.18',
+141 silly addNameRange     '0.1.19',
+141 silly addNameRange     '0.1.20' ] ]
+142 silly addNamed epoll@0.1.20
+143 verbose addNamed "0.1.20" is a plain semver version for epoll
+144 silly cache afterAdd epoll@0.1.20
+145 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\epoll\0.1.20\package\package.json not in flight; writing
+146 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+147 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\epoll\0.1.20\package\package.json written
+148 silly install resolved [ { name: 'epoll',
+148 silly install resolved     version: '0.1.20',
+148 silly install resolved     description: 'A low-level Node.js binding for the Linux epoll API',
+148 silly install resolved     main: 'epoll.js',
+148 silly install resolved     directories: { example: 'example', test: 'test' },
+148 silly install resolved     scripts:
+148 silly install resolved      { test: 'echo "Tests can only be run manually from the command line." && exit 1',
+148 silly install resolved        install: 'node-gyp rebuild' },
+148 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/fivdi/epoll.git' },
+148 silly install resolved     engines: { node: '>=0.8.0' },
+148 silly install resolved     dependencies: { bindings: '~1.2.1', nan: '~2.4.0' },
+148 silly install resolved     keywords:
+148 silly install resolved      [ 'epoll',
+148 silly install resolved        'epollpri',
+148 silly install resolved        'poll',
+148 silly install resolved        'pollpri',
+148 silly install resolved        'gpio',
+148 silly install resolved        'interrupt',
+148 silly install resolved        'linux' ],
+148 silly install resolved     author: { name: 'fivdi' },
+148 silly install resolved     license: 'MIT',
+148 silly install resolved     gypfile: true,
+148 silly install resolved     gitHead: '1291ecd87587412ee347211ff88ae3643dd691d4',
+148 silly install resolved     bugs: { url: 'https://github.com/fivdi/epoll/issues' },
+148 silly install resolved     homepage: 'https://github.com/fivdi/epoll#readme',
+148 silly install resolved     _id: 'epoll@0.1.20',
+148 silly install resolved     _shasum: '68a7ef9bdb7a58813ccae2f817f8beb9ea396c55',
+148 silly install resolved     _from: 'epoll@>=0.1.19 <0.2.0',
+148 silly install resolved     _npmVersion: '3.9.5',
+148 silly install resolved     _nodeVersion: '6.2.2',
+148 silly install resolved     _npmUser: { name: 'fivdi', email: 'fivdiweb@gmail.com' },
+148 silly install resolved     maintainers: [ [Object] ],
+148 silly install resolved     dist:
+148 silly install resolved      { shasum: '68a7ef9bdb7a58813ccae2f817f8beb9ea396c55',
+148 silly install resolved        tarball: 'https://registry.npmjs.org/epoll/-/epoll-0.1.20.tgz' },
+148 silly install resolved     _npmOperationalInternal:
+148 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+148 silly install resolved        tmp: 'tmp/epoll-0.1.20.tgz_1469221947275_0.6876409735996276' },
+148 silly install resolved     _resolved: 'https://registry.npmjs.org/epoll/-/epoll-0.1.20.tgz',
+148 silly install resolved     readme: 'ERROR: No README data found!' } ]
+149 info install epoll@0.1.20 into D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+150 info installOne epoll@0.1.20
+151 verbose installOne of epoll to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff not in flight; installing
+152 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+153 verbose lock using C:\Users\166486\AppData\Roaming\npm-cache\_locks\epoll-d7bd1f22e7930a84.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+154 silly install write writing epoll 0.1.20 to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+155 verbose unbuild node_modules\onoff\node_modules\epoll
+156 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+157 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+158 verbose tar unpack C:\Users\166486\AppData\Roaming\npm-cache\epoll\0.1.20\package.tgz
+159 verbose tar unpacking to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+160 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll is being purged
+161 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+162 silly gunzTarPerm modes [ '777', '666' ]
+163 silly gunzTarPerm extractEntry package.json
+164 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+165 silly gunzTarPerm extractEntry .npmignore
+166 silly gunzTarPerm modified mode [ '.npmignore', 436, 438 ]
+167 silly gunzTarPerm extractEntry README.md
+168 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+169 silly gunzTarPerm extractEntry LICENSE
+170 silly gunzTarPerm modified mode [ 'LICENSE', 436, 438 ]
+171 silly gunzTarPerm extractEntry epoll.js
+172 silly gunzTarPerm modified mode [ 'epoll.js', 436, 438 ]
+173 silly gunzTarPerm extractEntry History.md
+174 silly gunzTarPerm modified mode [ 'History.md', 436, 438 ]
+175 silly gunzTarPerm extractEntry binding.gyp
+176 silly gunzTarPerm modified mode [ 'binding.gyp', 436, 438 ]
+177 silly gunzTarPerm extractEntry example/interrupts-per-second/interrupts-per-second.js
+178 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/interrupts-per-second.js',
+178 silly gunzTarPerm   436,
+178 silly gunzTarPerm   438 ]
+179 silly gunzTarPerm extractEntry example/interrupts-per-second/export
+180 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/export', 509, 511 ]
+181 silly gunzTarPerm extractEntry example/interrupts-per-second/unexport
+182 silly gunzTarPerm modified mode [ 'example/interrupts-per-second/unexport', 509, 511 ]
+183 silly gunzTarPerm extractEntry example/watch-button/watch-button.js
+184 silly gunzTarPerm modified mode [ 'example/watch-button/watch-button.js', 436, 438 ]
+185 silly gunzTarPerm extractEntry example/watch-button/export
+186 silly gunzTarPerm modified mode [ 'example/watch-button/export', 509, 511 ]
+187 silly gunzTarPerm extractEntry example/watch-button/unexport
+188 silly gunzTarPerm modified mode [ 'example/watch-button/unexport', 509, 511 ]
+189 silly gunzTarPerm extractEntry src/epoll.cc
+190 silly gunzTarPerm modified mode [ 'src/epoll.cc', 436, 438 ]
+191 silly gunzTarPerm extractEntry src/epoll.h
+192 silly gunzTarPerm modified mode [ 'src/epoll.h', 436, 438 ]
+193 silly gunzTarPerm extractEntry test/brute-force-leak-check.js
+194 silly gunzTarPerm modified mode [ 'test/brute-force-leak-check.js', 436, 438 ]
+195 silly gunzTarPerm extractEntry test/do-almost-nothing.js
+196 silly gunzTarPerm modified mode [ 'test/do-almost-nothing.js', 436, 438 ]
+197 silly gunzTarPerm extractEntry test/do-nothing.js
+198 silly gunzTarPerm modified mode [ 'test/do-nothing.js', 436, 438 ]
+199 silly gunzTarPerm extractEntry test/no-gc-allowed.js
+200 silly gunzTarPerm modified mode [ 'test/no-gc-allowed.js', 436, 438 ]
+201 silly gunzTarPerm extractEntry test/closed.js
+202 silly gunzTarPerm modified mode [ 'test/closed.js', 436, 438 ]
+203 silly gunzTarPerm extractEntry test/performance-check.js
+204 silly gunzTarPerm modified mode [ 'test/performance-check.js', 436, 438 ]
+205 silly gunzTarPerm extractEntry test/util.js
+206 silly gunzTarPerm modified mode [ 'test/util.js', 436, 438 ]
+207 silly gunzTarPerm extractEntry test/two-shot.js
+208 silly gunzTarPerm modified mode [ 'test/two-shot.js', 436, 438 ]
+209 silly gunzTarPerm extractEntry test/verify-events.js
+210 silly gunzTarPerm modified mode [ 'test/verify-events.js', 436, 438 ]
+211 silly gunzTarPerm extractEntry test/one-shot.js
+212 silly gunzTarPerm modified mode [ 'test/one-shot.js', 436, 438 ]
+213 silly gunzTarPerm extractEntry test/run-tests
+214 silly gunzTarPerm modified mode [ 'test/run-tests', 509, 511 ]
+215 verbose write writing to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\package.json
+216 info preinstall epoll@0.1.20
+217 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\package.json
+218 silly prepareForInstallMany adding bindings@~1.2.1 from epoll dependencies
+219 silly prepareForInstallMany adding nan@~2.4.0 from epoll dependencies
+220 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\package.json
+221 silly cache add args [ 'nan@~2.4.0', null ]
+222 verbose cache add spec nan@~2.4.0
+223 silly cache add parsed spec Result {
+223 silly cache add   raw: 'nan@~2.4.0',
+223 silly cache add   scope: null,
+223 silly cache add   name: 'nan',
+223 silly cache add   rawSpec: '~2.4.0',
+223 silly cache add   spec: '>=2.4.0 <2.5.0',
+223 silly cache add   type: 'range' }
+224 silly addNamed nan@>=2.4.0 <2.5.0
+225 verbose addNamed ">=2.4.0 <2.5.0" is a valid semver range for nan
+226 silly addNameRange { name: 'nan', range: '>=2.4.0 <2.5.0', hasData: false }
+227 silly mapToRegistry name nan
+228 silly mapToRegistry using default registry
+229 silly mapToRegistry registry https://registry.npmjs.org/
+230 silly mapToRegistry data Result {
+230 silly mapToRegistry   raw: 'nan',
+230 silly mapToRegistry   scope: null,
+230 silly mapToRegistry   name: 'nan',
+230 silly mapToRegistry   rawSpec: '',
+230 silly mapToRegistry   spec: 'latest',
+230 silly mapToRegistry   type: 'tag' }
+231 silly mapToRegistry uri https://registry.npmjs.org/nan
+232 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+233 silly cache add args [ 'bindings@~1.2.1', null ]
+234 verbose cache add spec bindings@~1.2.1
+235 silly cache add parsed spec Result {
+235 silly cache add   raw: 'bindings@~1.2.1',
+235 silly cache add   scope: null,
+235 silly cache add   name: 'bindings',
+235 silly cache add   rawSpec: '~1.2.1',
+235 silly cache add   spec: '>=1.2.1 <1.3.0',
+235 silly cache add   type: 'range' }
+236 silly addNamed bindings@>=1.2.1 <1.3.0
+237 verbose addNamed ">=1.2.1 <1.3.0" is a valid semver range for bindings
+238 silly addNameRange { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: false }
+239 silly mapToRegistry name bindings
+240 silly mapToRegistry using default registry
+241 silly mapToRegistry registry https://registry.npmjs.org/
+242 silly mapToRegistry data Result {
+242 silly mapToRegistry   raw: 'bindings',
+242 silly mapToRegistry   scope: null,
+242 silly mapToRegistry   name: 'bindings',
+242 silly mapToRegistry   rawSpec: '',
+242 silly mapToRegistry   spec: 'latest',
+242 silly mapToRegistry   type: 'tag' }
+243 silly mapToRegistry uri https://registry.npmjs.org/bindings
+244 verbose addNameRange registry:https://registry.npmjs.org/bindings not in flight; fetching
+245 verbose request uri https://registry.npmjs.org/nan
+246 verbose request no auth needed
+247 info attempt registry request try #1 at 1:39:43 AM
+248 verbose etag "EGTR1APXEV7TH8V3QYT0WN357"
+249 http request GET https://registry.npmjs.org/nan
+250 verbose request uri https://registry.npmjs.org/bindings
+251 verbose request no auth needed
+252 info attempt registry request try #1 at 1:39:43 AM
+253 verbose etag "33TX4J3DNTGF7K41ZUV6OA182"
+254 http request GET https://registry.npmjs.org/bindings
+255 http 304 https://registry.npmjs.org/nan
+256 verbose headers { date: 'Thu, 28 Jul 2016 20:08:21 GMT',
+256 verbose headers   via: '1.1 varnish',
+256 verbose headers   'cache-control': 'max-age=300',
+256 verbose headers   etag: '"EGTR1APXEV7TH8V3QYT0WN357"',
+256 verbose headers   age: '37',
+256 verbose headers   connection: 'keep-alive',
+256 verbose headers   'x-served-by': 'cache-sin6927-SIN',
+256 verbose headers   'x-cache': 'HIT',
+256 verbose headers   'x-cache-hits': '1',
+256 verbose headers   'x-timer': 'S1469736501.725668,VS0,VE0',
+256 verbose headers   vary: 'Accept-Encoding' }
+257 silly get cb [ 304,
+257 silly get   { date: 'Thu, 28 Jul 2016 20:08:21 GMT',
+257 silly get     via: '1.1 varnish',
+257 silly get     'cache-control': 'max-age=300',
+257 silly get     etag: '"EGTR1APXEV7TH8V3QYT0WN357"',
+257 silly get     age: '37',
+257 silly get     connection: 'keep-alive',
+257 silly get     'x-served-by': 'cache-sin6927-SIN',
+257 silly get     'x-cache': 'HIT',
+257 silly get     'x-cache-hits': '1',
+257 silly get     'x-timer': 'S1469736501.725668,VS0,VE0',
+257 silly get     vary: 'Accept-Encoding' } ]
+258 verbose etag https://registry.npmjs.org/nan from cache
+259 verbose get saving nan to C:\Users\166486\AppData\Roaming\npm-cache\registry.npmjs.org\nan\.cache.json
+260 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+261 silly addNameRange number 2 { name: 'nan', range: '>=2.4.0 <2.5.0', hasData: true }
+262 silly addNameRange versions [ 'nan',
+262 silly addNameRange   [ '0.3.0-wip',
+262 silly addNameRange     '0.3.0-wip2',
+262 silly addNameRange     '0.3.0',
+262 silly addNameRange     '0.3.1',
+262 silly addNameRange     '0.3.2',
+262 silly addNameRange     '0.4.0',
+262 silly addNameRange     '0.4.1',
+262 silly addNameRange     '0.4.2',
+262 silly addNameRange     '0.4.3',
+262 silly addNameRange     '0.4.4',
+262 silly addNameRange     '0.5.0',
+262 silly addNameRange     '0.5.1',
+262 silly addNameRange     '0.5.2',
+262 silly addNameRange     '0.6.0',
+262 silly addNameRange     '0.7.0',
+262 silly addNameRange     '0.7.1',
+262 silly addNameRange     '0.8.0',
+262 silly addNameRange     '1.0.0',
+262 silly addNameRange     '1.1.0',
+262 silly addNameRange     '1.1.1',
+262 silly addNameRange     '1.1.2',
+262 silly addNameRange     '1.2.0',
+262 silly addNameRange     '1.3.0',
+262 silly addNameRange     '1.4.0',
+262 silly addNameRange     '1.4.1',
+262 silly addNameRange     '1.5.0',
+262 silly addNameRange     '1.4.2',
+262 silly addNameRange     '1.4.3',
+262 silly addNameRange     '1.5.1',
+262 silly addNameRange     '1.5.2',
+262 silly addNameRange     '1.6.0',
+262 silly addNameRange     '1.5.3',
+262 silly addNameRange     '1.6.1',
+262 silly addNameRange     '1.6.2',
+262 silly addNameRange     '1.7.0',
+262 silly addNameRange     '1.8.0',
+262 silly addNameRange     '1.8.1',
+262 silly addNameRange     '1.8.2',
+262 silly addNameRange     '1.8.3',
+262 silly addNameRange     '1.8.4',
+262 silly addNameRange     '1.9.0',
+262 silly addNameRange     '2.0.0',
+262 silly addNameRange     '2.0.1',
+262 silly addNameRange     '2.0.2',
+262 silly addNameRange     '2.0.3',
+262 silly addNameRange     '2.0.4',
+262 silly addNameRange     '2.0.5',
+262 silly addNameRange     '2.0.6',
+262 silly addNameRange     '2.0.7',
+262 silly addNameRange     '2.0.8',
+262 silly addNameRange     '2.0.9',
+262 silly addNameRange     '2.1.0',
+262 silly addNameRange     '2.2.0',
+262 silly addNameRange     '2.2.1',
+262 silly addNameRange     '2.3.0',
+262 silly addNameRange     '2.3.1',
+262 silly addNameRange     '2.3.2',
+262 silly addNameRange     '2.3.3',
+262 silly addNameRange     '2.3.4',
+262 silly addNameRange     '2.3.5',
+262 silly addNameRange     '2.4.0' ] ]
+263 silly addNamed nan@2.4.0
+264 verbose addNamed "2.4.0" is a plain semver version for nan
+265 silly cache afterAdd nan@2.4.0
+266 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json not in flight; writing
+267 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+268 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\nan\2.4.0\package\package.json written
+269 http 304 https://registry.npmjs.org/bindings
+270 verbose headers { date: 'Thu, 28 Jul 2016 20:08:22 GMT',
+270 verbose headers   via: '1.1 varnish',
+270 verbose headers   'cache-control': 'max-age=300',
+270 verbose headers   etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+270 verbose headers   age: '195',
+270 verbose headers   connection: 'keep-alive',
+270 verbose headers   'x-served-by': 'cache-sin6920-SIN',
+270 verbose headers   'x-cache': 'HIT',
+270 verbose headers   'x-cache-hits': '2',
+270 verbose headers   'x-timer': 'S1469736502.151618,VS0,VE0',
+270 verbose headers   vary: 'Accept-Encoding' }
+271 silly get cb [ 304,
+271 silly get   { date: 'Thu, 28 Jul 2016 20:08:22 GMT',
+271 silly get     via: '1.1 varnish',
+271 silly get     'cache-control': 'max-age=300',
+271 silly get     etag: '"33TX4J3DNTGF7K41ZUV6OA182"',
+271 silly get     age: '195',
+271 silly get     connection: 'keep-alive',
+271 silly get     'x-served-by': 'cache-sin6920-SIN',
+271 silly get     'x-cache': 'HIT',
+271 silly get     'x-cache-hits': '2',
+271 silly get     'x-timer': 'S1469736502.151618,VS0,VE0',
+271 silly get     vary: 'Accept-Encoding' } ]
+272 verbose etag https://registry.npmjs.org/bindings from cache
+273 verbose get saving bindings to C:\Users\166486\AppData\Roaming\npm-cache\registry.npmjs.org\bindings\.cache.json
+274 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+275 silly addNameRange number 2 { name: 'bindings', range: '>=1.2.1 <1.3.0', hasData: true }
+276 silly addNameRange versions [ 'bindings',
+276 silly addNameRange   [ '0.0.1',
+276 silly addNameRange     '0.1.0',
+276 silly addNameRange     '0.1.1',
+276 silly addNameRange     '0.2.0',
+276 silly addNameRange     '0.2.1',
+276 silly addNameRange     '0.2.2',
+276 silly addNameRange     '0.2.3',
+276 silly addNameRange     '0.2.4',
+276 silly addNameRange     '0.3.0',
+276 silly addNameRange     '0.4.0',
+276 silly addNameRange     '1.0.0',
+276 silly addNameRange     '1.1.0',
+276 silly addNameRange     '1.1.1',
+276 silly addNameRange     '1.2.0',
+276 silly addNameRange     '1.2.1' ] ]
+277 silly addNamed bindings@1.2.1
+278 verbose addNamed "1.2.1" is a plain semver version for bindings
+279 silly cache afterAdd bindings@1.2.1
+280 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json not in flight; writing
+281 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+282 verbose afterAdd C:\Users\166486\AppData\Roaming\npm-cache\bindings\1.2.1\package\package.json written
+283 silly install resolved [ { name: 'nan',
+283 silly install resolved     version: '2.4.0',
+283 silly install resolved     description: 'Native Abstractions for Node.js: C++ header for Node 0.8 -> 6 compatibility',
+283 silly install resolved     main: 'include_dirs.js',
+283 silly install resolved     repository: { type: 'git', url: 'git://github.com/nodejs/nan.git' },
+283 silly install resolved     scripts:
+283 silly install resolved      { test: 'tap --gc --stderr test/js/*-test.js',
+283 silly install resolved        'rebuild-tests': 'node-gyp rebuild --msvs_version=2013 --directory test',
+283 silly install resolved        docs: 'doc/.build.sh' },
+283 silly install resolved     contributors:
+283 silly install resolved      [ [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object],
+283 silly install resolved        [Object] ],
+283 silly install resolved     devDependencies:
+283 silly install resolved      { bindings: '~1.2.1',
+283 silly install resolved        commander: '^2.8.1',
+283 silly install resolved        glob: '^5.0.14',
+283 silly install resolved        'node-gyp': '~3.0.1',
+283 silly install resolved        'readable-stream': '^2.1.4',
+283 silly install resolved        tap: '~0.7.1',
+283 silly install resolved        xtend: '~4.0.0' },
+283 silly install resolved     license: 'MIT',
+283 silly install resolved     bugs: { url: 'https://github.com/nodejs/nan/issues' },
+283 silly install resolved     homepage: 'https://github.com/nodejs/nan#readme',
+283 silly install resolved     _id: 'nan@2.4.0',
+283 silly install resolved     _shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+283 silly install resolved     _resolved: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz',
+283 silly install resolved     _from: 'nan@>=2.4.0 <2.5.0',
+283 silly install resolved     _npmVersion: '3.3.6',
+283 silly install resolved     _nodeVersion: '5.0.0',
+283 silly install resolved     _npmUser: { name: 'kkoopa', email: 'bbyholm@abo.fi' },
+283 silly install resolved     dist:
+283 silly install resolved      { shasum: 'fb3c59d45fe4effe215f0b890f8adf6eb32d2232',
+283 silly install resolved        tarball: 'https://registry.npmjs.org/nan/-/nan-2.4.0.tgz' },
+283 silly install resolved     maintainers: [ [Object], [Object] ],
+283 silly install resolved     _npmOperationalInternal:
+283 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+283 silly install resolved        tmp: 'tmp/nan-2.4.0.tgz_1468158679820_0.6951719264034182' },
+283 silly install resolved     directories: {},
+283 silly install resolved     readme: 'ERROR: No README data found!' },
+283 silly install resolved   { name: 'bindings',
+283 silly install resolved     description: 'Helper module for loading your native module\'s .node file',
+283 silly install resolved     keywords: [ 'native', 'addon', 'bindings', 'gyp', 'waf', 'c', 'c++' ],
+283 silly install resolved     version: '1.2.1',
+283 silly install resolved     author:
+283 silly install resolved      { name: 'Nathan Rajlich',
+283 silly install resolved        email: 'nathan@tootallnate.net',
+283 silly install resolved        url: 'http://tootallnate.net' },
+283 silly install resolved     repository:
+283 silly install resolved      { type: 'git',
+283 silly install resolved        url: 'git://github.com/TooTallNate/node-bindings.git' },
+283 silly install resolved     main: './bindings.js',
+283 silly install resolved     bugs: { url: 'https://github.com/TooTallNate/node-bindings/issues' },
+283 silly install resolved     homepage: 'https://github.com/TooTallNate/node-bindings',
+283 silly install resolved     license: 'MIT',
+283 silly install resolved     gitHead: 'e404152ee27f8478ccbc7122ee051246e8e5ec02',
+283 silly install resolved     _id: 'bindings@1.2.1',
+283 silly install resolved     scripts: {},
+283 silly install resolved     _shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+283 silly install resolved     _from: 'bindings@>=1.2.1 <1.3.0',
+283 silly install resolved     _npmVersion: '1.4.14',
+283 silly install resolved     _npmUser: { name: 'tootallnate', email: 'nathan@tootallnate.net' },
+283 silly install resolved     maintainers: [ [Object], [Object] ],
+283 silly install resolved     dist:
+283 silly install resolved      { shasum: '14ad6113812d2d37d72e67b4cacb4bb726505f11',
+283 silly install resolved        tarball: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz' },
+283 silly install resolved     directories: {},
+283 silly install resolved     _resolved: 'https://registry.npmjs.org/bindings/-/bindings-1.2.1.tgz',
+283 silly install resolved     readme: 'ERROR: No README data found!' } ]
+284 info install nan@2.4.0 into D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+285 info install bindings@1.2.1 into D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+286 info installOne nan@2.4.0
+287 verbose installOne of nan to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll not in flight; installing
+288 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+289 info installOne bindings@1.2.1
+290 verbose installOne of bindings to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll not in flight; installing
+291 verbose correctMkdir C:\Users\166486\AppData\Roaming\npm-cache\_locks correctMkdir not in flight; initializing
+292 verbose lock using C:\Users\166486\AppData\Roaming\npm-cache\_locks\nan-3e697f62d89b948c.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+293 verbose lock using C:\Users\166486\AppData\Roaming\npm-cache\_locks\bindings-0f2e2a62177f84f6.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+294 silly install write writing nan 2.4.0 to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+295 silly install write writing bindings 1.2.1 to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+296 verbose unbuild node_modules\onoff\node_modules\epoll\node_modules\nan
+297 verbose unbuild node_modules\onoff\node_modules\epoll\node_modules\bindings
+298 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+299 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+300 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+301 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+302 verbose tar unpack C:\Users\166486\AppData\Roaming\npm-cache\nan\2.4.0\package.tgz
+303 verbose tar unpacking to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+304 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan is being purged
+305 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+306 verbose tar unpack C:\Users\166486\AppData\Roaming\npm-cache\bindings\1.2.1\package.tgz
+307 verbose tar unpacking to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+308 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings is being purged
+309 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+310 silly gunzTarPerm modes [ '777', '666' ]
+311 silly gunzTarPerm modes [ '777', '666' ]
+312 silly gunzTarPerm extractEntry package.json
+313 silly gunzTarPerm modified mode [ 'package.json', 436, 438 ]
+314 silly gunzTarPerm extractEntry package.json
+315 silly gunzTarPerm modified mode [ 'package.json', 420, 438 ]
+316 silly gunzTarPerm extractEntry README.md
+317 silly gunzTarPerm modified mode [ 'README.md', 436, 438 ]
+318 silly gunzTarPerm extractEntry include_dirs.js
+319 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 438 ]
+320 silly gunzTarPerm extractEntry README.md
+321 silly gunzTarPerm modified mode [ 'README.md', 420, 438 ]
+322 silly gunzTarPerm extractEntry bindings.js
+323 silly gunzTarPerm modified mode [ 'bindings.js', 420, 438 ]
+324 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+325 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 438 ]
+326 silly gunzTarPerm extractEntry CHANGELOG.md
+327 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 438 ]
+328 silly gunzTarPerm extractEntry LICENSE.md
+329 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 438 ]
+330 silly gunzTarPerm extractEntry doc/node_misc.md
+331 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 438 ]
+332 silly gunzTarPerm extractEntry doc/asyncworker.md
+333 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 438 ]
+334 silly gunzTarPerm extractEntry doc/callback.md
+335 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 438 ]
+336 silly gunzTarPerm extractEntry doc/converters.md
+337 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 438 ]
+338 silly gunzTarPerm extractEntry doc/errors.md
+339 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 438 ]
+340 silly gunzTarPerm extractEntry doc/maybe_types.md
+341 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 438 ]
+342 silly gunzTarPerm extractEntry doc/methods.md
+343 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 438 ]
+344 verbose write writing to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings\package.json
+345 silly gunzTarPerm extractEntry doc/new.md
+346 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 438 ]
+347 silly gunzTarPerm extractEntry doc/buffers.md
+348 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 438 ]
+349 silly gunzTarPerm extractEntry doc/object_wrappers.md
+350 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 438 ]
+351 silly gunzTarPerm extractEntry doc/persistent.md
+352 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 438 ]
+353 info preinstall bindings@1.2.1
+354 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings\package.json
+355 silly gunzTarPerm extractEntry doc/scopes.md
+356 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 438 ]
+357 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings\package.json
+358 silly install resolved []
+359 verbose about to build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+360 info build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+361 silly gunzTarPerm extractEntry doc/script.md
+362 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 438 ]
+363 silly gunzTarPerm extractEntry doc/string_bytes.md
+364 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 438 ]
+365 info linkStuff bindings@1.2.1
+366 silly linkStuff bindings@1.2.1 has D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules as its parent node_modules
+367 verbose linkBins bindings@1.2.1
+368 verbose linkMans bindings@1.2.1
+369 verbose rebuildBundles bindings@1.2.1
+370 info install bindings@1.2.1
+371 silly gunzTarPerm extractEntry doc/v8_internals.md
+372 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 438 ]
+373 silly gunzTarPerm extractEntry doc/v8_misc.md
+374 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 438 ]
+375 info postinstall bindings@1.2.1
+376 verbose unlock done using C:\Users\166486\AppData\Roaming\npm-cache\_locks\bindings-0f2e2a62177f84f6.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\bindings
+377 silly gunzTarPerm extractEntry nan.h
+378 silly gunzTarPerm modified mode [ 'nan.h', 436, 438 ]
+379 silly gunzTarPerm extractEntry nan_callbacks.h
+380 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 438 ]
+381 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+382 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 438 ]
+383 silly gunzTarPerm extractEntry nan_converters.h
+384 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 438 ]
+385 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+386 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 438 ]
+387 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+388 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 438 ]
+389 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+390 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 438 ]
+391 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+392 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 438 ]
+393 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+394 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 438 ]
+395 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+396 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 438 ]
+397 silly gunzTarPerm extractEntry nan_new.h
+398 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 438 ]
+399 silly gunzTarPerm extractEntry nan_object_wrap.h
+400 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 438 ]
+401 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+402 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 438 ]
+403 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+404 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 438 ]
+405 silly gunzTarPerm extractEntry nan_string_bytes.h
+406 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 438 ]
+407 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+408 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 438 ]
+409 silly gunzTarPerm extractEntry nan_weak.h
+410 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 438 ]
+411 silly gunzTarPerm extractEntry tools/package.json
+412 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 438 ]
+413 silly gunzTarPerm extractEntry tools/README.md
+414 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 438 ]
+415 silly gunzTarPerm extractEntry tools/1to2.js
+416 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 511 ]
+417 verbose write writing to D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan\package.json
+418 info preinstall nan@2.4.0
+419 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan\package.json
+420 verbose readDependencies loading dependencies from D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan\package.json
+421 silly install resolved []
+422 verbose about to build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+423 info build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+424 info linkStuff nan@2.4.0
+425 silly linkStuff nan@2.4.0 has D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules as its parent node_modules
+426 verbose linkBins nan@2.4.0
+427 verbose linkMans nan@2.4.0
+428 verbose rebuildBundles nan@2.4.0
+429 info install nan@2.4.0
+430 info postinstall nan@2.4.0
+431 verbose unlock done using C:\Users\166486\AppData\Roaming\npm-cache\_locks\nan-3e697f62d89b948c.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll\node_modules\nan
+432 verbose about to build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+433 info build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+434 info linkStuff epoll@0.1.20
+435 silly linkStuff epoll@0.1.20 has D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules as its parent node_modules
+436 verbose linkBins epoll@0.1.20
+437 verbose linkMans epoll@0.1.20
+438 verbose rebuildBundles epoll@0.1.20
+439 verbose rebuildBundles [ 'bindings', 'nan' ]
+440 info install epoll@0.1.20
+441 verbose unsafe-perm in lifecycle true
+442 info epoll@0.1.20 Failed to exec install script
+443 verbose unlock done using C:\Users\166486\AppData\Roaming\npm-cache\_locks\epoll-d7bd1f22e7930a84.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+444 verbose about to build D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+445 verbose unlock done using C:\Users\166486\AppData\Roaming\npm-cache\_locks\onoff-55f0b6666ca7d83f.lock for D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+446 verbose stack Error: epoll@0.1.20 install: `node-gyp rebuild`
+446 verbose stack Exit status 1
+446 verbose stack     at EventEmitter.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\lifecycle.js:217:16)
+446 verbose stack     at emitTwo (events.js:87:13)
+446 verbose stack     at EventEmitter.emit (events.js:172:7)
+446 verbose stack     at ChildProcess.<anonymous> (C:\Program Files\nodejs\node_modules\npm\lib\utils\spawn.js:24:14)
+446 verbose stack     at emitTwo (events.js:87:13)
+446 verbose stack     at ChildProcess.emit (events.js:172:7)
+446 verbose stack     at maybeClose (internal/child_process.js:827:16)
+446 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
+447 verbose pkgid epoll@0.1.20
+448 verbose cwd D:\Elangovan\projects\hackanthon\Jarvis
+449 error Windows_NT 6.1.7601
+450 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "onoff"
+451 error node v4.4.7
+452 error npm  v2.15.8
+453 error code ELIFECYCLE
+454 error epoll@0.1.20 install: `node-gyp rebuild`
+454 error Exit status 1
+455 error Failed at the epoll@0.1.20 install script 'node-gyp rebuild'.
+455 error This is most likely a problem with the epoll package,
+455 error not with npm itself.
+455 error Tell the author that this fails on your system:
+455 error     node-gyp rebuild
+455 error You can get information on how to open an issue for this project with:
+455 error     npm bugs epoll
+455 error Or if that isn't available, you can get their info via:
+455 error
+455 error     npm owner ls epoll
+455 error There is likely additional logging output above.
+456 verbose exit [ 1, true ]
+457 verbose unbuild node_modules\onoff\node_modules\epoll
+458 info preuninstall epoll@0.1.20
+459 info uninstall epoll@0.1.20
+460 verbose unbuild rmStuff epoll@0.1.20 from D:\Elangovan\projects\hackanthon\Jarvis\node_modules
+461 verbose unbuild rmStuff in D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules
+462 info postuninstall epoll@0.1.20
+463 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+464 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+465 silly vacuum-fs purging D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules\epoll
+466 silly vacuum-fs removing D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff\node_modules
+467 silly vacuum-fs quitting because other entries in D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+468 verbose unbuild node_modules\onoff
+469 info preuninstall onoff@1.1.1
+470 info uninstall onoff@1.1.1
+471 verbose unbuild rmStuff onoff@1.1.1 from D:\Elangovan\projects\hackanthon\Jarvis\node_modules
+472 info postuninstall onoff@1.1.1
+473 silly gentlyRm D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff is being purged from base D:\Elangovan\projects\hackanthon\Jarvis
+474 verbose gentlyRm don't care about contents; nuking D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+475 silly vacuum-fs purging D:\Elangovan\projects\hackanthon\Jarvis\node_modules\onoff
+476 silly vacuum-fs quitting because other entries in D:\Elangovan\projects\hackanthon\Jarvis\node_modules
